@@ -1,0 +1,5 @@
+ServiceHTTP\controller\AttendancesController.class
+ServiceHTTP\Application.class
+ServiceHTTP\entity\Attendances.class
+ServiceHTTP\Service\HttpService.class
+ServiceHTTP\repository\AttendancesRepository.class
