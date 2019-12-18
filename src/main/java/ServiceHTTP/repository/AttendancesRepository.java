@@ -11,6 +11,8 @@ public interface AttendancesRepository extends CrudRepository<Attendances,Intege
 
     List<Attendances> findByIdlocationAndCurrentdateAfterAndCurrentdateBefore(int idLocation, Date dateDeb, Date DateFin);
 
-    // List<Attendances> findByIdlocationAndCurrentdate_Hours(int idLocation, Date hours);
+    List<Attendances> findByIdlocationAndCurrentdateAfter(int idLocation, Date dateDeb);
+
+    //List<Attendances> findByIdlocationAndCurrentdate_Hours(int idLocation, Date hours);
 
 }

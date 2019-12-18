@@ -1,5 +1,12 @@
 C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\controller\AttendancesController.java
+C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\repository\LocationRepository.java
+C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\Model\AttendancesDTO.java
+C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\repository\IaDataRepository.java
+C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\controller\IADataController.java
+C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\entity\Location.java
 C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\entity\Attendances.java
+C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\entity\IaData.java
 C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\repository\AttendancesRepository.java
 C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\Service\HttpService.java
 C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\Application.java
+C:\Users\BRZYCKI Corentin\Desktop\Projet\ServiceHTTP\src\main\java\ServiceHTTP\Service\PostService.java

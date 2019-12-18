@@ -1,5 +1,12 @@
 ServiceHTTP\controller\AttendancesController.class
+ServiceHTTP\controller\IADataController.class
 ServiceHTTP\Application.class
+ServiceHTTP\repository\IaDataRepository.class
+ServiceHTTP\entity\Location.class
+ServiceHTTP\entity\IaData.class
+ServiceHTTP\repository\AttendancesRepository.class
 ServiceHTTP\entity\Attendances.class
 ServiceHTTP\Service\HttpService.class
-ServiceHTTP\repository\AttendancesRepository.class
+ServiceHTTP\Service\PostService.class
+ServiceHTTP\repository\LocationRepository.class
+ServiceHTTP\Model\AttendancesDTO.class

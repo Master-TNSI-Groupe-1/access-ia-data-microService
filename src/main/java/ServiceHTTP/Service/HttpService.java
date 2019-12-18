@@ -1,7 +1,10 @@
 package ServiceHTTP.Service;
 
+import ServiceHTTP.Model.AttendancesDTO;
 import ServiceHTTP.entity.Attendances;
+import ServiceHTTP.entity.Location;
 import ServiceHTTP.repository.AttendancesRepository;
+import ServiceHTTP.repository.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +20,9 @@ public class HttpService {
     @Autowired
     AttendancesRepository attendancesRepository;
 
+    @Autowired
+    LocationRepository locationRepository;
+
 
     // Récupération de toutes les données d'une journée
     public List<Attendances> getLogsbyDays(int idLocation, Date date){
@@ -26,6 +32,12 @@ public class HttpService {
         calendarAfter.add(Calendar.DATE,1);
 
         return attendancesRepository.findByIdlocationAndCurrentdateAfterAndCurrentdateBefore(idLocation,date,calendarAfter.getTime());
+    }
+
+    // Récupération de toutes les données d'une journée
+    public List<Attendances> getLogsbyDaysDuring(int idLocation, Date date){
+
+        return attendancesRepository.findByIdlocationAndCurrentdateAfter(idLocation,date);
     }
 
     // Récupération de toutes les données d'une heure
@@ -44,5 +56,18 @@ public class HttpService {
 
         return lstResult;
         //return attendancesRepository.findByIdlocationAndCurrentdate_Hours(idLocation,date.getHours());
+    }
+
+    public List<AttendancesDTO> getNumberPlaces (List<Attendances> lstAttendances){
+        List<AttendancesDTO> lstResult = new ArrayList<AttendancesDTO>();
+
+        for(Attendances item: lstAttendances)
+        {
+            Location location = locationRepository.findFirstByIdlocationIs(item.getIdlocation());
+            lstResult.add(new AttendancesDTO(item,location.getNumberPlaces()));
+
+        }
+
+        return lstResult;
     }
 }
